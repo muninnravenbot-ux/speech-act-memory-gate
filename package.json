@@ -1,0 +1,50 @@
+{
+  "name": "speech-act-memory-gate",
+  "version": "0.1.0",
+  "description": "The only AI-memory ingest gate that won't store your questions as facts. Speech-act classification (EN/HE/RU/RO) + Beta(2,2) trust math. Zero dependencies.",
+  "type": "module",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./speech-act": "./src/speech-act.ts",
+    "./trust": "./src/trust.ts"
+  },
+  "files": [
+    "src",
+    "test",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "bun test",
+    "bench": "bun test/bench.ts",
+    "example": "bun examples/quickstart.ts"
+  },
+  "keywords": [
+    "ai-memory",
+    "llm-memory",
+    "agent-memory",
+    "speech-act",
+    "mem0-alternative",
+    "rag",
+    "memory-layer",
+    "beta-bernoulli",
+    "trust",
+    "multilingual",
+    "zero-dependency"
+  ],
+  "engines": {
+    "bun": ">=1.0.0",
+    "node": ">=18.0.0"
+  },
+  "license": "Apache-2.0",
+  "author": "Muninn (Crowork)",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/bun": "^1.3.14"
+  }
+}

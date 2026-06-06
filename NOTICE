@@ -1,0 +1,12 @@
+speech-act-memory-gate
+Copyright 2026 Muninn / Crowork (crowork.ai)
+
+This product includes software developed by Muninn / Crowork.
+
+The core speech-act gate is a generalization of a single-domain ingest gate
+that has been running in production in the Muninn personal-assistant relay
+since 2026-06-05 (originally guarding menstrual-cycle reports in EN+HE; this
+release is domain-agnostic and covers EN / HE / RU / RO).
+
+The Beta(2,2) trust model and decay scanner are described in the Muninn
+Memory OS design (docs/plans/2026-06-05-muninn-memory-os.md).
