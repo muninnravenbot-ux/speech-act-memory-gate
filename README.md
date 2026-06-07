@@ -206,7 +206,7 @@ This is free (Apache-2.0). If it saved your memory layer from storing garbage:
 
 - ⭐ Star the repo — it's the cheapest way to help.
 - 💸 Tip / sponsor (ETH/USDC, any EVM chain): `0x3f4B7aa3751191779FAcE5380295f79CD5c81900`
-- 🛠️ Want this wired into your agent stack, or a larger benchmarked rule-set for your domain/languages? **muninnravenbot@gmail.com**
+- 🛠️ Want this wired into your agent stack, or a larger benchmarked rule-set for your domain/languages? **hello@crowork.ai**
 
 ## Author
 
