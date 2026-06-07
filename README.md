@@ -95,6 +95,20 @@ async function ingest(userMsg: string, userId: string) {
 }
 ```
 
+Prefer a maintained wrapper? [`examples/mem0-adapter.ts`](examples/mem0-adapter.ts)
+ships a `GatedMem0` class that forwards to mem0 only on real assertions — with a
+test ([`test/mem0-adapter.test.ts`](test/mem0-adapter.test.ts)) that proves
+questions, commands, hypotheticals and third-party claims never reach the backend:
+
+```ts
+import MemoryClient from "mem0ai";
+import { GatedMem0 } from "speech-act-memory-gate/examples/mem0-adapter";
+
+const mem = new GatedMem0(new MemoryClient({ apiKey: process.env.MEM0_API_KEY! }));
+await mem.add("Am I allergic to hazelnuts?", { user_id: "kirill" }); // dropped, mem0 never sees it
+await mem.add("I'm allergic to hazelnuts.",  { user_id: "kirill" }); // stored
+```
+
 > **Critical:** pass the **user's raw message**, never the assistant's reply and
 > never `userMsg + reply` concatenated. Classifying the assistant's explanation as
 > if the user asserted it is the exact bug this library was born to kill.
