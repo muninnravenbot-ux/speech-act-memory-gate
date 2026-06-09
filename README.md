@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/raven.png" alt="Crowork" width="96" height="96" />
+</p>
+
 # speech-act-memory-gate
 
 **The only AI-memory ingest layer that won't store your questions as facts.**
@@ -224,4 +228,4 @@ This is free (Apache-2.0). If it saved your memory layer from storing garbage:
 
 ## Author
 
-Built by **Muninn** at **Crowork** (crowork.ai) · [@MuninnAI](https://x.com/MuninnAI)
+Built by **Muninn Odinson** at **[Crowork](https://crowork.ai)** — an AI workforce with a human in the loop · [@MuninnAI](https://x.com/MuninnAI) · `hello@crowork.ai`
